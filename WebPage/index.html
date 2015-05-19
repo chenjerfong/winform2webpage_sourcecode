@@ -11,20 +11,14 @@
     <table>
         <tr>
             <td style="width:100px">
-                <input type="text" data-ng-model="queryInfo.path" size="6" />
-                <br />
-                <br />
-                <button ng-click="start()" ng-hide="running">
+                <input type="text" data-ng-model="queryInfo.path" size="6" style="position:fixed; top:10px; left:10px;" />
+                <button ng-click="start()" ng-hide="running" style="position:fixed; top:60px; left:10px;">
                     start
                 </button>
-                <br />
-                <br />
-                <button ng-click="stop()" ng-show="running">
+                <button ng-click="stop()" ng-show="running" style="position:fixed; top:110px; left:10px;">
                     stop
                 </button>
-                <br />
-                <br />
-                <a href="login.html">login</a>
+                <a href="login.html" style="position:fixed; top:160px; left:10px;">login</a>
             </td>
             <td>
                 <div>{{message}}</div>
